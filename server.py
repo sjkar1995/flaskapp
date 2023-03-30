@@ -1,7 +1,7 @@
 from flask import Flask,render_template,request
+import pyodbc
+ccnn=pyodbc.connect('DRIVER={SQL Server};SERVER=DESKTOP-GJ0PM7F\SQLEXPRESS;DATABASE=test;')
 #change
-#test
-
 app = Flask(__name__)
 
 @app.route("/")
